@@ -9,6 +9,4 @@ Most of my recent work is AI tooling at [@firstbitelabsllc](https://github.com/f
 - 📦 [**Skillbox**](https://github.com/firstbitelabsllc/skillbox) — one reviewed SKILL.md source, mounted across Claude Code, Codex, and Cursor without copying.
 - 🛫 [**Takeoff**](https://github.com/leojkwan/takeoff) — turns a release claim into a deterministic local proof pass.
 
-Longer ago: iOS apps and Swift libraries, a music journal called Muse (my first App Store app), and a running-10k page that raised money for charity. Some of it still works.
-
 I write at [leojkwan.com](https://leojkwan.com).
