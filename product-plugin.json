@@ -1,0 +1,100 @@
+{
+  "schema": "leo.product-plugin.v1",
+  "plugin": {
+    "name": "leojkwan",
+    "version": "0.1.1",
+    "description": "Shape, create for, and prove Leo Kwan's public product and brand without packaging private context.",
+    "display_name": "Leo Kwan",
+    "author": {
+      "name": "Leo Kwan"
+    },
+    "repository": "https://github.com/leojkwan/leojkwan",
+    "license": "All Rights Reserved",
+    "category": "Personal Brand"
+  },
+  "source": {
+    "commit": "2ce88ff35216ecbd10da80bf3de167acb31532fe"
+  },
+  "skills": [
+    {
+      "name": "leojkwan",
+      "path": "ai/skills/leojkwan",
+      "role": "router"
+    },
+    {
+      "name": "leojkwan-brand",
+      "path": "ai/skills/leojkwan-brand",
+      "role": "specialist"
+    },
+    {
+      "name": "leojkwan-prove",
+      "path": "ai/skills/leojkwan-prove",
+      "role": "specialist"
+    }
+  ],
+  "shared_dependencies": [
+    "browse",
+    "computer-use",
+    "craft",
+    "creator",
+    "finalcut",
+    "groundtruth",
+    "impeccable",
+    "leon",
+    "web",
+    "playwright",
+    "shadow",
+    "slop",
+    "taste",
+    "vercel-deploy"
+  ],
+  "private_overlays": [
+    {
+      "name": "leojkwan-person-overlay",
+      "package": false,
+      "required_base_tree_sha256": "9c23e0dd1c755976c8bce6a0ecd5d971c04f81e88b12b36dda55d728da0e671a"
+    },
+    {
+      "name": "leojkwan-host-runtime",
+      "package": false,
+      "required_base_tree_sha256": "9c23e0dd1c755976c8bce6a0ecd5d971c04f81e88b12b36dda55d728da0e671a"
+    }
+  ],
+  "compatibility_routes": [
+    {
+      "name": "brand-leojkwan",
+      "package": false,
+      "status": "temporary",
+      "retire_after": "all supported hosts resolve leojkwan-brand exactly once and cold brand/video probes preserve the public/private split"
+    },
+    {
+      "name": "leojkwan-blog",
+      "package": false,
+      "status": "temporary",
+      "retire_after": "cold site/blog requests route to leojkwan without restoring the retired skill"
+    },
+    {
+      "name": "leojkwan-legacy-loose-skill-mounts",
+      "package": false,
+      "status": "temporary",
+      "retire_after": "Codex, Claude, and Cursor each resolve the installed package exactly once"
+    }
+  ],
+  "protected_actions": [
+    "authenticate",
+    "deploy",
+    "publish",
+    "schedule-public-content",
+    "write-leo-byline",
+    "upload",
+    "send",
+    "spend",
+    "change-dns",
+    "change-telemetry",
+    "unpublish",
+    "redirect-public-content",
+    "delete-public-or-archive-content",
+    "expose-private-archive",
+    "destructive-media-action"
+  ]
+}
